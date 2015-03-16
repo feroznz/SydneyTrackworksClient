@@ -1,0 +1,29 @@
+<div class="container">
+    <div data-ng-app="myApp.trackworks" ng-controller="TrackworksController">
+
+<div class="widget-content user">
+        <div class="form-group">
+            <input class="form-control" data-ng-model="searchText" placeholder="Find by name" type="text"/>
+        </div>
+    <div data-ng-repeat="item in trackworkList |filter: searchText track by $index">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-success">
+                <div class="panel-heading panel-heading-custom">
+                    <p> <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#{{$index}}">{{item.title}}</a></p>
+                </div>
+                <div id="{{$index}}" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">{{item.description}}...</li>
+                            <li class="list-group-item">{{item.pubDate}}</li>
+                            <li class="list-group-item">{{item.startDate}}</li>
+                            <li class="list-group-item">{{item.endDate}}</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+        </div>
