@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.goodServices module', function() {
+describe('myApp.trackworks module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.trackworks'));
 
-  describe('goodServices controller', function(){
+  describe('trackworks controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+      var trackworksCtrl = $controller('TrackworksController');
+      expect(trackworksCtrl).toBeDefined();
     }));
 
   });
